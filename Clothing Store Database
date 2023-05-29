@@ -1,0 +1,25 @@
+--Creating a clothing store database
+
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, aisle INTEGER, price INTEGER);
+
+INSERT INTO clothing VALUES ( 1, "Pants", 324, 3, 10.98);
+INSERT INTO clothing VALUES ( 2, "Shorts", 634, 5, 8.97);
+INSERT INTO clothing VALUES ( 3, "Skirts", 936, 7, 8.56);
+INSERT INTO clothing VALUES ( 4, "Leggings", 456, 9, 12.87);
+INSERT INTO clothing VALUES ( 5, "Joggers", 834, 12, 12.98);
+INSERT INTO clothing VALUES ( 6, "Sweat Pants", 976, 15, 15.98);
+INSERT INTO clothing VALUES ( 7, "T-shirts", 632, 11, 12.75);
+INSERT INTO clothing VALUES ( 8, "Tank Tops", 783, 1, 7.56);
+INSERT INTO clothing VALUES ( 9, "Hoodies", 523, 8, 17.86);
+INSERT INTO clothing VALUES ( 10, "Jackets", 724, 10, 19.85);
+INSERT INTO clothing VALUES ( 11, "Socks", 464, 2, 3.98);
+INSERT INTO clothing VALUES ( 12, "Shoes", 498, 4, 28.99);
+INSERT INTO clothing VALUES ( 13, "Sandles", 698, 6, 23.89);
+INSERT INTO clothing VALUES ( 14, "Boots", 725, 14, 35.99);
+INSERT INTO clothing VALUES ( 15, "Hats", 560, 13, 14.85);
+
+--displaying the data ordered by price.
+SELECT * FROM clothing ORDER BY price;
+
+--which items have more quantity in store over than 543?
+SELECT * FROM clothing WHERE quantity > 543 ORDER BY quantity;
